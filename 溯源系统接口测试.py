@@ -2,10 +2,11 @@
 import requests
 from requests_toolbelt.multipart import MultipartEncoder
 import unittest
-# url="https://v0.yiketianqi.com/api"
-# data={'appid':'78778619','appsecret':'y3UvmynJ','version':'v61'}
-# r=requests.post(url,)
-# print(r.json())
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(r'D:\GitHub练习\溯源系统接口测试.py'))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 
 class Suyuan_automate(unittest.TestCase):
     def setUp(self):
